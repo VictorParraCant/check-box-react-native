@@ -1,0 +1,25 @@
+{
+  "name": "check-box-react-native",
+  "version": "0.0.6",
+  "description": "Checkbox component for react native, it works on iOS and Android.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\""
+  },
+  "keywords": [
+    "react-native",
+    "react-native-component",
+    "react-native-checkbox",
+    "check-box",
+    "check",
+    "box",
+    "react-component",
+    "ios",
+    "android"
+  ],
+  "author": "VictorParraCant",
+  "license": "MIT",
+  "peerDependencies": {
+    "react-native": ">=0.20.0"
+  }
+}
