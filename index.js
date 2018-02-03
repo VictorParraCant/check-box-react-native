@@ -21,7 +21,7 @@ export default class CheckBox extends Component {
         onClick: React.PropTypes.func.isRequired,
         isChecked: React.PropTypes.bool
     }
-    
+
     static defaultProps = {
         isChecked: false,
         leftTextStyle: {},
@@ -35,6 +35,7 @@ export default class CheckBox extends Component {
             <Text style={[styles.leftText, this.props.leftTextStyle]}>{this.props.leftText}</Text>
         )
     }
+
     _renderRight() {
         if (this.props.rightTextView)return this.props.rightTextView;
         if (!this.props.rightText)return null;
@@ -59,7 +60,7 @@ export default class CheckBox extends Component {
         )
     }
 
-    onClick() {
+    handlerOnClick = () => {
         this.props.onClick();
     }
 
@@ -67,7 +68,7 @@ export default class CheckBox extends Component {
         return (
             <TouchableHighlight
                 style={this.props.style}
-                onPress={()=>this.onClick()}
+                onPress={this.handlerOnClick}
                 underlayColor='transparent'
             >
                 <View style={styles.container}>

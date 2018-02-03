@@ -9,7 +9,9 @@
 - [Installation](#installation)
 - [Getting started](#getting-started)
 - [API](#api)
+- [Features](#features)
 - [Contribution](#contribution)
+- [License](#license)
 
 ## Installation:
 
@@ -93,6 +95,9 @@ checkedImage  |  React.PropTypes.element  | true  | Default image | Custom  chec
 unCheckedImage  |  React.PropTypes.element  | true  |  Default image  | Custom  unchecked Image
 isChecked  |  React.PropTypes.bool |  true  |  false  | PropTypes checkbox checked
 onClick   |  React.PropTypes.func.isRequired |  false  |  | callback  function
+
+## Features:
+- [ ] Create test.
 
 ## Contribution:
 
