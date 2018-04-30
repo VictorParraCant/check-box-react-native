@@ -4,7 +4,7 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React, {Component} from 'react'
 import { StyleSheet, View, Image, Text, TouchableHighlight } from 'react-native'
 
 export default class CheckBox extends Component {
@@ -19,7 +19,8 @@ export default class CheckBox extends Component {
         checkedImage: React.PropTypes.element,
         unCheckedImage: React.PropTypes.element,
         onClick: React.PropTypes.func.isRequired,
-        isChecked: React.PropTypes.bool
+        isChecked: React.PropTypes.bool,
+        disabled: PropTypes.bool
     }
 
     static defaultProps = {
@@ -61,7 +62,7 @@ export default class CheckBox extends Component {
     }
 
     handlerOnClick = () => {
-        this.props.onClick();
+        this.props.onClick()
     }
 
     render() {
@@ -70,6 +71,7 @@ export default class CheckBox extends Component {
                 style={this.props.style}
                 onPress={this.handlerOnClick}
                 underlayColor='transparent'
+                disabled={this.props.disabled}
             >
                 <View style={styles.container}>
                     {this._renderLeft()}

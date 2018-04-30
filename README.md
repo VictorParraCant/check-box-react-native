@@ -15,7 +15,7 @@
 
 ## Installation:
 
-```
+```javascript
 npm install check-box-react-native --save
 ```
 
@@ -24,7 +24,7 @@ npm install check-box-react-native --save
 
 Add `react-native-check-box` to your js file.   
 
-```
+```javascript
 import CheckBox from 'check-box-react-native'
 ```
 
@@ -86,15 +86,16 @@ renderCheckBox = (data) => {
 
 Props              | Type     | Optional | Default     | Description
 ----------------- | -------- | -------- | ----------- | -----------
-style  | View.propTypes.style  | true |   |   Custom style checkbox
-leftText | React.PropTypes.string |true |   | Custom left Text
-leftTextStyle  |  View.propTypes.style | true | Custom left Text style
-rightText | React.PropTypes.string |true |   | Custom right Text
-rightTextStyle  | View.propTypes.style | true | Custom right Text style
-checkedImage  |  React.PropTypes.element  | true  | Default image | Custom  checked Image
-unCheckedImage  |  React.PropTypes.element  | true  |  Default image  | Custom  unchecked Image
+style  | View.propTypes.style  | true |   | Custom style checkbox
+leftText | React.PropTypes.string |true |   | Custom left text
+leftTextStyle  | View.propTypes.style | true | Custom left style
+rightText | React.PropTypes.string |true |   | Custom right text
+rightTextStyle  | View.propTypes.style | true | Custom right style
+checkedImage  | React.PropTypes.element  | true  | Default image | Custom checked image
+unCheckedImage | React.PropTypes.element  | true  | Default image  | Custom unchecked image
 isChecked  |  React.PropTypes.bool |  true  |  false  | PropTypes checkbox checked
-onClick   |  React.PropTypes.func.isRequired |  false  |  | callback  function
+onClick   |  React.PropTypes.func.isRequired |  false  |  | callback function
+disabled |  React.PropTypes.bool |  true  |  false  | Disable the checkbox button
 
 ## Features:
 - [ ] Create test.
